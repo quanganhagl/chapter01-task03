@@ -1,0 +1,11 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    min-width: $base-width;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
