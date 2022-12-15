@@ -1,0 +1,25 @@
+.c-column {
+    margin-top: 100px;
+
+    .c-column__list {
+        margin-top: 100px;
+    }
+    
+    .c-column_articleblock {
+        padding-bottom: 35px;
+        border-bottom: 1px solid #176b6a;
+        display: grid;
+        grid-template-columns: 9fr 1fr;
+        align-items: center;
+        justify-items: end;
+    }
+
+    .c-column_article {
+        padding-top: 35px;
+    }
+
+    .c-column__header {
+        display: grid;
+        grid-template-columns: 275px 500px;
+    }
+}

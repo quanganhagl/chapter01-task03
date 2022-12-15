@@ -1,0 +1,24 @@
+<section class="c-column l-container">
+    <h2>
+        <img src="./assets/img/column/column_headingcover.jpg" alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
+    </h2>
+    <div class="c-column__list l-container2">
+        <% columns.forEach(column => { %>
+            <div class="c-column_articleblock">
+                <div class="c-column_article">
+                    <div class="c-column__header">
+                        <img src="./assets/img/column/column_<%= column.id %>.jpg" alt="column.title">
+                        <div>
+                            <p><%= column.titleNote %></p>
+                            <h3><%= column.title %></h3>
+                        </div>        
+                    </div>
+                    <p><%= column.description %></p>
+                </div>
+                <div>
+                    <img src="./assets/img/column/column_arrow.png" alt="go-to arrow">
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</section>

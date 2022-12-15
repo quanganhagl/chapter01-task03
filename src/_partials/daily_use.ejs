@@ -1,0 +1,17 @@
+<section class="c-daily l-container">
+    <p class="c-daily__intro">使い方いろいろ</p>
+    <h2 class="c-daily__menthaoil">毎日にハッカ油</h2>
+    <div class="c-daily__uses">
+      <% if (typeof dailyItems != 'undefined') { %>
+        <% dailyItems.forEach(dailyItem => { %>
+          <div class="c-daily__use <%= dailyItem.class %>">
+            <img src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>">
+            <label class="c-daily__label"><%= dailyItem.title %></label>
+            <% if (dailyItem.recommend) { %>
+              <img class="c-daily__recommend" src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>">
+              <% } %>
+          </div>
+        <% }) %>
+      <% } %>
+    </div>
+  </section>

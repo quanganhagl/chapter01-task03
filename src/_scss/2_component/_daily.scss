@@ -1,0 +1,36 @@
+.c-daily {
+    margin-top: 80px;
+
+    .c-daily__intro {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .c-daily__menthaoil {
+        font-size: 4.6rem;
+        text-align: center;
+    }
+
+    .c-daily__uses {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+
+        .c-daily__use {
+            position: relative;
+
+            .c-daily__label {
+                position: absolute;
+                color: #333;
+                text-decoration: dashed underline #333 1px;
+            }
+
+            .c-daily__recommend {
+                position: absolute;
+                top: -50px;
+                left: -50px;
+            }
+        }
+    }
+}

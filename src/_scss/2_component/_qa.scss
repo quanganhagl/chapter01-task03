@@ -1,0 +1,32 @@
+.c-qa {
+    margin-top: 100px;
+
+    .c-qa__heading {
+        font-size: 3.6rem;
+        text-align: center;
+        color: #176b6a;
+    }
+
+    .c-qa__list {
+        margin-top: 100px;
+    }
+
+    .c-qa__questionanswer {
+        margin-top: 30px;
+    }
+    
+    .c-qa__question {
+        display: grid;
+        grid-template-columns: 70px 500px;
+        align-items: center;
+    }
+
+    .c-qa__questioncontent {
+        // padding: 2px;
+    }
+
+    .c-qa__answer {
+        margin-top: 10px;
+    }
+}
+

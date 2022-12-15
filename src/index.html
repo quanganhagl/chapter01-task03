@@ -6,39 +6,33 @@
 
 <!-- @content -->
 <main class="p-home">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
+  <div class="p-home__content">
 
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br />
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br />
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
+      <!-- BANNER -->
+      <!-- *********************************** -->
+      <%- include('_partials/banner'); -%>
+
+      <!-- DAILY USE -->
+      <!-- *********************************** -->  
+      <%- include('_partials/daily_use'); -%>
+      
+      <!-- INFO -->
+      <!-- *********************************** -->  
+      <%- include('_partials/info'); -%>
+
+      <!-- Q&A -->
+      <!-- *********************************** -->  
+      <%- include('_partials/qa'); -%>
+
+      <!-- COLUMN -->
+      <!-- *********************************** -->  
+      <%- include('_partials/column'); -%>
+      
+      
+  </div>
 </main>
 <!-- @@content -->
 
 <!-- @script -->
-<script>
-  console.log("home page");
-</script>
+<script></script>
 <!-- @@script -->

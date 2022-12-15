@@ -1,0 +1,125 @@
+.c-info {
+    .c-info__content {
+        margin-top: 80px;
+    }
+
+    padding-top: 100px;
+    background-color: #f6f5ef;
+
+    .c-info__pointheading {
+        display: grid;
+        grid-template-columns: 100px 450px;
+
+    }
+
+    .c-info__images {
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        column-gap: 50px;
+    }
+
+    .c-info__imagecontainer11,
+    .c-info__imagecontainer12,
+    .c-info__imagecontainer13,
+    .c-info__imagecontainer21,
+    .c-info__imagecontainer22,
+    .c-info__imagecontainer23,
+    .c-info__imagecontainer31,
+    .c-info__imagecontainer32,
+    .c-info__imagecontainer33 {
+        position: relative;
+    }
+
+    .c-info__image11,
+    .c-info__image12,
+    .c-info__image13,
+    .c-info__image21,
+    .c-info__image22,
+    .c-info__image23,
+    .c-info__image31,
+    .c-info__image32,
+    .c-info__image33 {
+        border-radius: 30px;
+    }
+
+    .c-info__more {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .c-info__linebreak {
+        background-color: #000;
+        width: 35px;
+        height: 2px;
+        border: none;
+    }
+
+    .c-info__label {
+        font-size: 2.2rem;
+    }
+    
+    .c-info__bigheading {
+        font-size: 3.6rem;
+        color: #176b6a;
+
+    }
+
+    .c-info__overlay {
+        position: absolute;
+        top: 0;
+        border-radius: 26px;
+        background-color: rgba(254, 254, 254, 0.8);
+        margin: 30px;
+        padding: 50px;
+    }
+
+    .c-info__overlayheading {
+        font-size: 2.4rem;
+        color: #176b6a;
+    }
+
+    .c-info__overlaylinebreak {
+        width: 50px;
+        height: 1px;
+        border: none;
+        background-color: #176b6a;
+    }
+    
+    .c-info__overlaydescription {
+        font-size: 1.2rem;
+    }
+
+    .c-info__overlaylabel {
+        background-image: url(./assets/img/point/point_button.png);
+        color: #fff;
+        font-size: 1.6rem;
+        padding: 8px;
+        display: inline-block;
+    }
+
+    .c-info__brandheading {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 3rem;
+        color: #176b6a;
+    }
+
+    .c-info__brandlogos {
+        display: grid;
+        grid-template-columns: repeat(4, 260px);
+        column-gap: 30px;
+        margin-top: 30px;
+    }
+
+    .c-info__brandlogo {
+        border-radius: 20px;
+    }
+
+    .c-info__brandnote {
+        font-size: 1.2rem;
+        color: #333;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

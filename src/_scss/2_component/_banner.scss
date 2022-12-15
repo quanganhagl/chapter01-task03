@@ -1,0 +1,42 @@
+.c-banner {
+    padding-top: 100px;
+    position: relative;
+
+    .c-banner__content {
+        width: 300px;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+
+        .c-banner__linebreak {
+            background-color: #000;
+            width: 60px;
+            height: 2px;
+            border: none;;
+        }
+
+        .c-banner__product--en {
+            font-size: 1.6rem;
+            line-height: 2.5;
+            margin-top: 30px;
+        }
+
+        .c-banner__slogan {
+            font-size: 1.6rem;
+        }
+
+        .c-banner__slogan2 {
+            font-size: 3rem;
+        }
+
+        .c-banner__label {
+            font-size: 2.4rem;
+            color: #fff;
+            padding: 17px 39px 18px;
+            background: #25a989;
+            border-radius: 27.5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    }
+}

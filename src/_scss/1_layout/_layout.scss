@@ -3,9 +3,45 @@
 body {
     font-family: $main-fonts;
     font-size: 1.4rem;
-    min-width: $base-width;
+    font-weight: 400;
     line-height: 1.5;
     @include sp {
         min-width: 320px;
     }
+    max-width: 1920px;
+    letter-spacing: 3px;
+    background: repeat url(./assets/img/mainbg.jpg);
+
+    .p-home {
+        padding: 30px 30px 0;
+
+        .p-home__content {
+            background-color: #fff;
+        }
+    }
+
+    .l-container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1120px;
+    }
+
+    .l-container2 {
+        margin-right: auto;
+        margin-left: auto;
+        width: 854px;
+    }
+
+    .c-footer__contact {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .c-footer__logo {
+        margin-left: auto;
+        margin-top: auto;
+    }
 }
+
+

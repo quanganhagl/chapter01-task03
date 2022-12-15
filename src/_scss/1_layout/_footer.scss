@@ -2,4 +2,9 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
+    padding: 0 30px 30px;
+
+    .c-footer__content {
+        background-color: #fff;
+    }
 }
