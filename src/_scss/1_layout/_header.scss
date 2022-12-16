@@ -1,6 +1,25 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
+    position: fixed;
+    z-index: 10;
+
+    .c-header__navitem {
+        margin-bottom: 30px;
+    }
+
+    .c-header__navlink {
+        display: flex;
+        background: url(./assets/img/header/header_background.png);
+        width: 198px;
+        height: 40px;
+        align-items: center;
+    }
+
+    .c-header__navtext {
+        margin-left: 15px;
+    }
+
 }
 /* Main menu
 ------------------------------------------------------------*/

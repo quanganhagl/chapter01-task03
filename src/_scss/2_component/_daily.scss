@@ -14,7 +14,6 @@
     .c-daily__uses {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         row-gap: 50px;
 
         .c-daily__use {
@@ -22,7 +21,6 @@
 
             .c-daily__label {
                 position: absolute;
-                color: #333;
                 text-decoration: dashed underline #333 1px;
             }
 

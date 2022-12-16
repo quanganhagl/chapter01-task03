@@ -2,6 +2,12 @@
     padding-top: 100px;
     position: relative;
 
+    .c-banner_img {
+        object-fit: cover;
+        height: 480px;
+        border-radius: 63px;
+    }
+
     .c-banner__content {
         width: 300px;
         position: absolute;
@@ -31,7 +37,6 @@
 
         .c-banner__label {
             font-size: 2.4rem;
-            color: #fff;
             padding: 17px 39px 18px;
             background: #25a989;
             border-radius: 27.5px;

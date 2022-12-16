@@ -1,6 +1,6 @@
 <section class="c-info">
     <div class="c-info__content l-container">
-        <div class="c-info__point">
+        <div class="c-info__points">
         <% if (typeof info != 'undefined') { %> 
             <% info.points.pointNumbers.forEach(pointNumber => { %>
             <div>
@@ -11,7 +11,7 @@
                         <label class="c-info__label">POINT</label>
                     </div>
                     <div class="c-info__headingcontent">
-                        <h2 class="c-info__bigheading"><%= pointNumber.title %></h2>
+                        <h2 class="c-info__bigheading u-greentext"><%= pointNumber.title %></h2>
                         <p class="c-info__smallheading"><%= pointNumber.description %></p>
                     </div>
                 </div>
@@ -21,10 +21,10 @@
                         <img class="c-info__image<%= pointImage.id %>" src="<%= pointImage.url %>" alt="<%= pointImage.title %>">
                         <img class="c-info__more" src="./assets/img/point/point_more.png" alt="more">
                         <div class="c-info__overlay">
-                            <h3 class="c-info__overlayheading"><%= pointImage.title %></h3>
+                            <h3 class="c-info__overlayheading u-greentext"><%= pointImage.title %></h3>
                             <hr class="c-info__overlaylinebreak">
                             <p class="c-info__overlaydescription"><%= pointImage.description %></p>
-                            <label class="c-info__overlaylabel">ハッカ油コラムへ
+                            <label class="c-info__overlaylabel u-whitetext">ハッカ油コラムへ
                             </label>
                         </div>  
                     </div>
@@ -37,14 +37,14 @@
         <!-- Brand -->
         <!-- ********************* -->
         <div class="c-info__brand">
-            <h2 class="c-info__brandheading">お買い求めは全国のドラッグストア、またはこちらから</h2>
+            <h2 class="c-info__brandheading u-greentext">お買い求めは全国のドラッグストア、またはこちらから</h2>
             <div class="c-info__brandlogos">
                 <% info.brands.forEach(brand => { %>
                     <img class="c-info__brandlogo" src="<%= brand.url %>" alt="お買い求めは全国のドラッグストア、またはこちらから">
 
                 <%}) %>
             </div>
-            <p class="c-info__brandnote">Amazon、Amazon.co.jp、及びAmazon.co.jpロゴはAmazon.com, Inc.又はその関連会社の商標です。</p>
+            <p class="c-info__brandnote u-black333text">Amazon、Amazon.co.jp、及びAmazon.co.jpロゴはAmazon.com, Inc.又はその関連会社の商標です。</p>
         </div>
     </div>
 </section>

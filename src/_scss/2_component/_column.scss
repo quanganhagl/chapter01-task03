@@ -1,15 +1,21 @@
 .c-column {
     margin-top: 100px;
+    padding-bottom: 100px;
+
+    .c-column__heading {
+        padding: 0 45px;
+    }
 
     .c-column__list {
         margin-top: 100px;
+        padding: 0 130px;
     }
     
     .c-column_articleblock {
         padding-bottom: 35px;
         border-bottom: 1px solid #176b6a;
         display: grid;
-        grid-template-columns: 9fr 1fr;
+        grid-template-columns: 1fr 15px;
         align-items: center;
         justify-items: end;
     }
@@ -20,6 +26,11 @@
 
     .c-column__header {
         display: grid;
-        grid-template-columns: 275px 500px;
+        grid-template-columns: 275px 1fr;
+    }
+
+    .c-column__title {
+        font-size: 2.5rem;
+        font-weight: 400;
     }
 }

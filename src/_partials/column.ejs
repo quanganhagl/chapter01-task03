@@ -1,19 +1,19 @@
 <section class="c-column l-container">
-    <h2>
+    <h2 class="c-column__heading">
         <img src="./assets/img/column/column_headingcover.jpg" alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
     </h2>
-    <div class="c-column__list l-container2">
+    <div class="c-column__list l-container">
         <% columns.forEach(column => { %>
             <div class="c-column_articleblock">
                 <div class="c-column_article">
                     <div class="c-column__header">
                         <img src="./assets/img/column/column_<%= column.id %>.jpg" alt="column.title">
                         <div>
-                            <p><%= column.titleNote %></p>
-                            <h3><%= column.title %></h3>
+                            <p class="u-black333text"><%= column.titleNote %></p>
+                            <h3 class="c-column__title u-black333text"><%= column.title %></h3>
                         </div>        
                     </div>
-                    <p><%= column.description %></p>
+                    <p class="u-black333text"><%= column.description %></p>
                 </div>
                 <div>
                     <img src="./assets/img/column/column_arrow.png" alt="go-to arrow">

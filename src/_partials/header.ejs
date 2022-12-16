@@ -1,13 +1,15 @@
-<!-- <header class="c-header">
-  <nav class="c-gnav">
+<header class="c-header">
+  <nav class="c-header__nav">
     <ul>
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
-            <a href="<%= link.url %>"><%= link.title %></a>
+          <li class="c-header__navitem">
+            <a class="c-header__navlink u-whitetext" href="<%= link.url %>">
+              <span class="c-header__navtext"><%= link.title %></span>
+            </a>
           </li>
         <% }) %>
       <% } %>
     </ul>
   </nav>
-</header> -->
+</header>

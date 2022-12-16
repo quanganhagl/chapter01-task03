@@ -8,7 +8,9 @@ body {
     @include sp {
         min-width: 320px;
     }
-    max-width: 1920px;
+    
+    
+
     letter-spacing: 3px;
     background: repeat url(./assets/img/mainbg.jpg);
 
@@ -24,12 +26,7 @@ body {
         margin-right: auto;
         margin-left: auto;
         max-width: 1120px;
-    }
-
-    .l-container2 {
-        margin-right: auto;
-        margin-left: auto;
-        width: 854px;
+        width: 90%;
     }
 
     .c-footer__contact {

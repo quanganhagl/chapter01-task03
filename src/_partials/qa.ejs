@@ -1,14 +1,14 @@
-<section class="c-qa l-container861px">
+<section class="c-qa l-container">
     <div class="c-qa__content">
-        <h2 class="c-qa__heading">Q&A</h2>
-        <dl class="c-qa__list l-container2">
+        <h2 class="c-qa__heading u-greentext">Q&A</h2>
+        <dl class="c-qa__list l-container">
             <% qas.forEach(qa => { %>
             <div class="c-qa__questionanswer">
                 <dt class="c-qa__question">
                     <img src="./assets/img/qa/qa_icon.png" alt="question">
-                    <p class="c-qa__questioncontent"><%= qa.question %></p>
+                    <p class="c-qa__questioncontent u-greentext"><%= qa.question %></p>
                 </dt>
-                <dd class="c-qa__answer"><%= qa.answer %></dd>
+                <dd class="c-qa__answer u-black333text"><%= qa.answer %></dd>
             </div>
             <% }) %>
         </dl>

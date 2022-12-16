@@ -256,5 +256,51 @@
       "title": "さわやかハッカ油で虫除け対策！",
       "description": "ハッカ油の清涼感ある香りは人間には心地良いですが、多くの害虫は大の苦手。この性質を利用して、安心安全な天然の虫除け剤を手作りしてみましょう。身体に直接湿布するのはもちろん、網戸にシュッと一噴きしたり、キッチンの水回りなどに液剤を染み込ませたコットンを置いたりと、さまざまな用途に使えます。"
     }
-  ]
+  ],
+  "animation": {
+    "drops": [
+      {
+        "id": 1,
+        "src": "./assets/img/animation/drop1.png",
+        "alt": "drop1"
+      },
+      {
+        "id": 2,
+        "src": "./assets/img/animation/drop2.png",
+        "alt": "drop2"
+      },
+      {
+        "id": 3,
+        "src": "./assets/img/animation/drop3.png",
+        "alt": "drop3"
+      },
+      {
+        "id": 4,
+        "src": "./assets/img/animation/drop4.png",
+        "alt": "drop4"
+      },
+      {
+        "id": 5,
+        "src": "./assets/img/animation/drop5.png",
+        "alt": "drop5"
+      },
+      {
+        "id": 6,
+        "src": "./assets/img/animation/drop6.png",
+        "alt": "drop6"
+      }
+    ],
+    "leaves": [
+      {
+        "src": "./assets/img/animation/leaf_right.png",
+        "alt": "leaf right",
+        "class": "c-animation__leafright"
+      },
+      {
+        "src": "./assets/img/animation/leaf_top.png",
+        "alt": "leaf top",
+        "class": "c-animation__leaftop"
+      }
+    ]
+  }
 }

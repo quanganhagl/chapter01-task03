@@ -1,10 +1,13 @@
 .c-qa {
     margin-top: 100px;
 
+    .c-qa__content {
+        padding: 0 130px;
+    }
+
     .c-qa__heading {
         font-size: 3.6rem;
         text-align: center;
-        color: #176b6a;
     }
 
     .c-qa__list {
@@ -17,12 +20,8 @@
     
     .c-qa__question {
         display: grid;
-        grid-template-columns: 70px 500px;
+        grid-template-columns: 59px 1fr;
         align-items: center;
-    }
-
-    .c-qa__questioncontent {
-        // padding: 2px;
     }
 
     .c-qa__answer {

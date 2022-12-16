@@ -6,7 +6,7 @@
         <% dailyItems.forEach(dailyItem => { %>
           <div class="c-daily__use <%= dailyItem.class %>">
             <img src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>">
-            <label class="c-daily__label"><%= dailyItem.title %></label>
+            <label class="c-daily__label u-black333text"><%= dailyItem.title %></label>
             <% if (dailyItem.recommend) { %>
               <img class="c-daily__recommend" src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>">
               <% } %>
