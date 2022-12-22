@@ -3,9 +3,10 @@
 .c-header {
     position: fixed;
     z-index: 10;
+    margin-top: 66px;
 
     .c-header__navitem {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .c-header__navlink {
@@ -17,7 +18,8 @@
     }
 
     .c-header__navtext {
-        margin-left: 15px;
+        margin-left: 21px;
+        letter-spacing: 3.5px;
     }
 
 }

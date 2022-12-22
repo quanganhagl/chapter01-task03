@@ -8,37 +8,31 @@ body {
     @include sp {
         min-width: 320px;
     }
-    
-    
 
     letter-spacing: 3px;
     background: repeat url(./assets/img/mainbg.jpg);
+}
 
-    .p-home {
-        padding: 30px 30px 0;
-
-        .p-home__content {
-            background-color: #fff;
-        }
-    }
-
-    .l-container {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1120px;
-        width: 90%;
-    }
-
-    .c-footer__contact {
-        margin-top: 15px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .c-footer__logo {
-        margin-left: auto;
-        margin-top: auto;
+.l-container--1120px {
+    margin: auto;
+    max-width: 1120px;
+    width: 100%;
+    @include sp {
+        max-width: 630px;
     }
 }
 
+.l-container--1030px {
+    margin: auto;
+    max-width: 1030px;
+    width: 100%;
+}
 
+.l-container--860px {
+    margin: auto;
+    max-width: 860px;
+    width: 100%;
+    @include sp {
+        max-width: 630px;
+    }
+}

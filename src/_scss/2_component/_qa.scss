@@ -1,9 +1,6 @@
 .c-qa {
-    margin-top: 100px;
-
-    .c-qa__content {
-        padding: 0 130px;
-    }
+    padding-top: 76px;
+    padding-bottom: 53px;
 
     .c-qa__heading {
         font-size: 3.6rem;
@@ -11,11 +8,12 @@
     }
 
     .c-qa__list {
-        margin-top: 100px;
+        margin-top: -3px;
+        margin-left: 0;
     }
 
     .c-qa__questionanswer {
-        margin-top: 30px;
+        margin-top: 46px;
     }
     
     .c-qa__question {
@@ -24,8 +22,14 @@
         align-items: center;
     }
 
+    .c-qa__questioncontent {
+        margin-left: 15px;
+        letter-spacing: 1.4px;
+    }
+
     .c-qa__answer {
-        margin-top: 10px;
+        margin-top: 6px;
+        letter-spacing: 1.4px;
     }
 }
 

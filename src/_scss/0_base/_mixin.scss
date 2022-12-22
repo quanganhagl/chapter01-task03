@@ -14,14 +14,24 @@
 //============================================
 // breakpoint
 //============================================
+
+@mixin tab {
+    @media only screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
 @mixin sp {
     @media only screen and (max-width: 767px) {
         @content;
     }
 }
 
-@mixin tab {
-    @media only screen and (max-width: 1024px) {
-        @content;
-    }
+
+//============================================
+// utility
+//============================================
+@mixin hover-effect {
+    opacity: 0.7;
+    cursor: pointer;
 }

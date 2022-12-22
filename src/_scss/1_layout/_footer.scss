@@ -3,18 +3,77 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     padding: 0 30px 30px;
-    
+
     .c-footer__container {
-        padding-top: 100px;
+        padding-top: 50px;
         margin-top: -1px;
         background-color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .c-footer__content {
-        padding: 0 45px;
+    .c-footer__headingimg {
+        display: flex;
+        justify-content: center;
     }
-    
+
+    .c-footer__image {
+        border-radius: 50px;
+
+        &:hover {
+            @include hover-effect;
+        }
+    }
+
+    .c-footer__contact {
+        margin-top: 114px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 65px;
+        @include sp {
+            display: block;
+        }
+    }
+
+    .c-footer__contactinfo {
+        letter-spacing: 1.5px;
+        line-height: 1.7;
+    }
+
+    .c-footer__phonenumber {
+        &:hover {
+            @include hover-effect;
+        }
+    }
+
+    .c-footer__logo {
+        position: relative;
+
+        &:hover {
+            @include hover-effect;
+        }
+        @include sp {
+            text-align: center;
+        }
+    }
+
+    .c-footer__logoimg {
+        position: absolute;
+        top: 6px;
+        right: 0;
+        @include sp {
+            position: static;
+        }
+    }
+
     .c-footer__brand {
         font-size: 1.2rem;
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+        letter-spacing: 1.4px;
+        @include sp {
+            position: static;
+        }
     }
 }

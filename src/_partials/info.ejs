@@ -1,25 +1,29 @@
-<section class="c-info">
-    <div class="c-info__content l-container">
-        <div class="c-info__points">
+<section id="info" class="c-info">
+    <div class="c-info__content l-container--1120px p-scroll">
+        <div class="c-info__points l-container--1030px">
         <% if (typeof info != 'undefined') { %> 
             <% info.points.pointNumbers.forEach(pointNumber => { %>
-            <div>
+            <div class="c-info__pointblock">
+
                 <div class="c-info__pointheading">
                     <div class="c-info__number">
                         <img src="<%= pointNumber.url %>" alt="<%= pointNumber.title %>">
                         <hr class="c-info__linebreak">
                         <label class="c-info__label">POINT</label>
                     </div>
-                    <div class="c-info__headingcontent">
+                    <div class="c-info__headingcontent u-width--420px ">
                         <h2 class="c-info__bigheading u-greentext"><%= pointNumber.title %></h2>
-                        <p class="c-info__smallheading"><%= pointNumber.description %></p>
+                        <p class="c-info__smallheading pc-only"><%= pointNumber.description %></p>
+                        <p class="c-info__smallheading pc-only"><%= pointNumber.description2 %></p>
                     </div>
+                    <p class="c-info__smallheading sp-only"><%= pointNumber.description %><%= pointNumber.description2 %></p>
                 </div>
+                
                 <div class="c-info__images">
                     <% pointNumber.pointImages.forEach(pointImage => { %>
                     <div class="c-info__imagecontainer<%= pointImage.id %>">    
                         <img class="c-info__image<%= pointImage.id %>" src="<%= pointImage.url %>" alt="<%= pointImage.title %>">
-                        <img class="c-info__more" src="./assets/img/point/point_more.png" alt="more">
+                        <img class="c-info__more c-info__more<%= pointImage.point %>" src="./assets/img/point/point_more.png" alt="more">
                         <div class="c-info__overlay">
                             <h3 class="c-info__overlayheading u-greentext"><%= pointImage.title %></h3>
                             <hr class="c-info__overlaylinebreak">
@@ -36,7 +40,7 @@
         </div>
         <!-- Brand -->
         <!-- ********************* -->
-        <div class="c-info__brand">
+        <div class="c-info__brand l-container--1120px">
             <h2 class="c-info__brandheading u-greentext">お買い求めは全国のドラッグストア、またはこちらから</h2>
             <div class="c-info__brandlogos">
                 <% info.brands.forEach(brand => { %>

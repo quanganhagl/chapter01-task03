@@ -12,7 +12,7 @@
 //------------------------------------------------------------
 
 //------------------------------------------------------------
-// color
+// font
 //------------------------------------------------------------
 .u-black333text {
     color: #333;
@@ -26,9 +26,169 @@
     color: #fff;
 }
 
+.u-spacing--1p4px {
+    letter-spacing: 1.4px;
+}
 //------------------------------------------------------------
 // position
 //------------------------------------------------------------
+.u-fixed {
+    position: fixed;
+}
+
 .u-absolute {
-    // position: absolute;
+    position: absolute;
+}
+
+.u-aligned {
+    padding: 0 0 5px 9px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px dashed #ccc;
+}
+//------------------------------------------------------------
+// image
+//------------------------------------------------------------
+.u-originalscaled {
+    object-fit: contain;
+}
+
+.u-displayed {
+    display: flex !important;
+}
+
+.u-notdisplayed {
+    display: none !important;
+}
+
+.u-width--440px {
+    width: 440px;
+}
+
+//============================================
+// button
+//============================================
+.is-active {
+    opacity: 0.7;
+}
+
+.is-showoverlay {
+    display: flex !important;
+}
+
+//============================================
+// animation
+//============================================
+
+@keyframes updown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(30%);
+    }
+}
+
+.u-updown {
+    animation: 3s ease-in 0s infinite alternate updown;
+}
+
+@keyframes downup {
+    0% {
+        transform: translateY(30%);
+    }
+    
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.u-downup {
+    animation: 3s ease-in 0s infinite alternate downup;
+}
+
+@keyframes isshown {
+    0% {
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ishidden {
+    0% {
+        transform: translateY(0%);
+    }
+    
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes isnotindentedtop {
+    0% {
+        transform: translateY(-20%);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes isnotindentedright {
+    0% {
+        transform: translateX(20%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes isindentedtop {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes isindentedright {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(20%);
+    }
+}
+
+
+
+.is-shown {
+    animation: 0.5s ease-in 0s 1 forwards isshown;
+}
+
+.is-hidden {
+    animation: 0.5s ease-in 0s 1 forwards ishidden;
+}
+
+.is-notindented--top {
+    animation: 0.5s ease-in 0s 1 forwards isnotindentedtop;
+}
+
+.is-notindented--right {
+    animation: 0.5s ease-in 0s 1 forwards isnotindentedright;
+}
+
+.is-indented--top {
+    animation: 0.5s ease-in 0s 1 forwards isindentedtop;
+}
+
+.is-indented--right {
+    animation: 0.5s ease-in 0s 1 forwards isindentedright;
 }

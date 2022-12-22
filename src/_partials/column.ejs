@@ -1,24 +1,70 @@
-<section class="c-column l-container">
+<section id="column" class="c-column p-scroll">
+  <div class="l-container--1030px">
     <h2 class="c-column__heading">
-        <img src="./assets/img/column/column_headingcover.jpg" alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./assets/img/column/column_headingcover_mobile.jpg"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/img/column/column_headingcover.jpg"
+        />
+        <img
+          class="c-column__headingimg"
+          src="./assets/img/column/column_headingcover.jpg"
+          alt="日々の暮らしにお役立ち「ハッカ油コラム」へ"
+        />
+      </picture>
     </h2>
-    <div class="c-column__list l-container">
-        <% columns.forEach(column => { %>
-            <div class="c-column_articleblock">
-                <div class="c-column_article">
-                    <div class="c-column__header">
-                        <img src="./assets/img/column/column_<%= column.id %>.jpg" alt="column.title">
-                        <div>
-                            <p class="u-black333text"><%= column.titleNote %></p>
-                            <h3 class="c-column__title u-black333text"><%= column.title %></h3>
-                        </div>        
-                    </div>
-                    <p class="u-black333text"><%= column.description %></p>
-                </div>
-                <div>
-                    <img src="./assets/img/column/column_arrow.png" alt="go-to arrow">
-                </div>
+    <div class="c-column__list l-container--860px">
+      <% columns.forEach(column => { %>
+      <div class="c-column_articleblock">
+        <div class="c-column_article">
+          <div class="c-column__header">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./assets/img/column/column_<%= column.id %>_mobile.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./assets/img/column/column_<%= column.id %>.png"
+              />
+              <img
+                class="c-column__headerimg"
+                src="./assets/img/column/column_<%= column.id %>.png"
+                alt="column.title"
+              />
+            </picture>
+            <div class="c-column__headerheading">
+              <p class="u-black333text u-spacing--1p4px">
+                <%= column.titleNote %>
+              </p>
+              <h3 class="c-column__title u-black333text">
+                <%= column.title %>
+              </h3>
             </div>
-        <% }) %>
+          </div>
+          <p class="c-column__description u-black333text pc-only">
+            <%= column.description %>
+          </p>
+        </div>
+        <div class="pc-only">
+          <img
+            class="c-column__arrow"
+            src="./assets/img/column/column_arrow.png"
+            alt="go-to arrow"
+          />
+        </div>
+        <div class="c-column_sparrowblock sp-only">
+          <img
+            src="./assets/img/column/column_arrow_mobile.png"
+            alt="go-to arrow"
+          />
+        </div>
+      </div>
+      <% }) %>
     </div>
+  </div>
 </section>

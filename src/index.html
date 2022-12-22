@@ -5,31 +5,52 @@
 <!-- @@meta -->
 
 <!-- @content -->
-<main class="p-home">  
+<main class="p-home">
   <div class="p-home__content">
-      <!-- BANNER -->
-      <!-- *********************************** -->
-      <%- include('_partials/banner'); -%>
+    <!-- BANNER -->
+    <!-- *********************************** -->
+    <%- include('_partials/banner'); -%>
 
-      <!-- ANIMATION -->
-      <!-- *********************************** -->
-      <%- include('_partials/animation'); -%>
+    <!-- DAILY USE -->
+    <!-- *********************************** -->
+    <%- include('_partials/daily'); -%>
 
-      <!-- DAILY USE -->
-      <!-- *********************************** -->  
-      <%- include('_partials/daily_use'); -%>
-      
-      <!-- INFO -->
-      <!-- *********************************** -->  
-      <%- include('_partials/info'); -%>
+    <!-- INFO -->
+    <!-- *********************************** -->
+    <%- include('_partials/info'); -%>
 
-      <!-- Q&A -->
-      <!-- *********************************** -->  
-      <%- include('_partials/qa'); -%>
+    <!-- Q&A -->
+    <!-- *********************************** -->
+    <%- include('_partials/qa'); -%>
 
-      <!-- COLUMN -->
-      <!-- *********************************** -->  
-      <%- include('_partials/column'); -%>
+    <!-- COLUMN -->
+    <!-- *********************************** -->
+    <%- include('_partials/column'); -%>
+  </div>
+  <!-- animation-->
+  <!-- Leaf -->
+  <div class="c-banner__leaves">
+    <img
+      class="c-banner__leaftop u-fixed is-notindented--top"
+      src="./assets/img/animation/leaf_top.png"
+      alt="leaf top"
+    />
+
+    <img
+      class="c-banner__leafright u-fixed is-notindented--right"
+      src="./assets/img/animation/leaf_right.png"
+      alt="leaf right"
+    />
+  </div>
+  <!-- Bubble -->
+  <div class="c-banner__drops is-shown pc-only">
+    <% for (let i = 1; i<=6; i++) { %>
+    <img
+      class="c-banner__drop c-banner__drop<%= i %> u-absolute u-originalscaled<% if (i % 2 == 0) { %> u-downup <% } else { %> u-updown <% } %>"
+      src="<%= animation.drops[i-1].src %>"
+      alt="<%= animation.drops[i-1].alt %>"
+    />
+    <% } %>
   </div>
 </main>
 <!-- @@content -->
