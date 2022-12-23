@@ -1,17 +1,28 @@
-<section id="daily" class="c-daily l-container--1120px p-scroll">
-    <p class="c-daily__intro">使い方いろいろ</p>
-    <h2 class="c-daily__menthaoil">毎日にハッカ油</h2>
-    <div class="c-daily__uses">
-      <% if (typeof dailyItems != 'undefined') { %>
-        <% dailyItems.forEach(dailyItem => { %>
-          <div class="c-daily__use c-daily__use<%= dailyItem.id %>">
-            <img src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>">
-            <label class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text u-aligned"> <%= dailyItem.title %></label>
-            <% if (dailyItem.recommend) { %>
-              <img class="c-daily__recommend<%= dailyItem.id %> u-absolute" src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>">
-              <% } %>
-          </div>
-        <% }) %>
+<section id="daily" class="c-daily l-container p-scroll">
+  <p class="c-daily__intro">使い方いろいろ</p>
+  <h2 class="c-daily__menthaoil">毎日にハッカ油</h2>
+  <div class="c-daily__uses">
+    <% if (typeof dailyItems != 'undefined') { %> <%
+    dailyItems.forEach(dailyItem => { %>
+    <div class="c-daily__use c-daily__use<%= dailyItem.id %>">
+      <img
+        class="c-daily__useimg"
+        src="<%= dailyItem.url %>"
+        alt="<%= dailyItem.title %>"
+      />
+      <label
+        class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text u-aligned"
+      >
+        <%= dailyItem.title %></label
+      >
+      <% if (dailyItem.recommend) { %>
+      <img
+        class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-mt8"
+        src="<%= dailyItem.recommend %>"
+        alt="<%= dailyItem.title %>"
+      />
       <% } %>
     </div>
-  </section>
+    <% }) %> <% } %>
+  </div>
+</section>

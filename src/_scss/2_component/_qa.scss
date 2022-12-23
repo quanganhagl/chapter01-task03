@@ -1,6 +1,5 @@
 .c-qa {
-    padding-top: 76px;
-    padding-bottom: 53px;
+    padding: 76px 30px 53px;
 
     .c-qa__heading {
         font-size: 3.6rem;
@@ -15,7 +14,7 @@
     .c-qa__questionanswer {
         margin-top: 46px;
     }
-    
+
     .c-qa__question {
         display: grid;
         grid-template-columns: 59px 1fr;
@@ -32,4 +31,3 @@
         letter-spacing: 1.4px;
     }
 }
-

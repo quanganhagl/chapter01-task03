@@ -6,12 +6,9 @@
           media="(max-width: 767px)"
           srcset="./assets/img/column/column_headingcover_mobile.jpg"
         />
-        <source
-          media="(min-width: 1024px)"
-          srcset="./assets/img/column/column_headingcover.jpg"
-        />
+
         <img
-          class="c-column__headingimg"
+          class="c-column__headingimg u-scalehalf"
           src="./assets/img/column/column_headingcover.jpg"
           alt="日々の暮らしにお役立ち「ハッカ油コラム」へ"
         />
@@ -27,13 +24,10 @@
                 media="(max-width: 767px)"
                 srcset="./assets/img/column/column_<%= column.id %>_mobile.png"
               />
-              <source
-                media="(min-width: 1024px)"
-                srcset="./assets/img/column/column_<%= column.id %>.png"
-              />
+
               <img
-                class="c-column__headerimg"
-                src="./assets/img/column/column_<%= column.id %>.png"
+                class="c-column__headerimg u-scalehalf"
+                src="./assets/img/column/column_<%= column.id %>.jpg"
                 alt="column.title"
               />
             </picture>
@@ -46,19 +40,20 @@
               </h3>
             </div>
           </div>
-          <p class="c-column__description u-black333text pc-only">
+          <p class="c-column__description u-black333text is-sphidden">
             <%= column.description %>
           </p>
         </div>
         <div class="pc-only">
           <img
-            class="c-column__arrow"
+            class="c-column__arrow u-scalehalf"
             src="./assets/img/column/column_arrow.png"
             alt="go-to arrow"
           />
         </div>
-        <div class="c-column_sparrowblock sp-only">
+        <div class="c-column_sparrowblock u-displayedflex sp-only">
           <img
+            class="u-scalehalf sp-only"
             src="./assets/img/column/column_arrow_mobile.png"
             alt="go-to arrow"
           />

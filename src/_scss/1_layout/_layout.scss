@@ -13,13 +13,10 @@ body {
     background: repeat url(./assets/img/mainbg.jpg);
 }
 
-.l-container--1120px {
+.l-container {
     margin: auto;
     max-width: 1120px;
     width: 100%;
-    @include sp {
-        max-width: 630px;
-    }
 }
 
 .l-container--1030px {
@@ -32,7 +29,4 @@ body {
     margin: auto;
     max-width: 860px;
     width: 100%;
-    @include sp {
-        max-width: 630px;
-    }
 }

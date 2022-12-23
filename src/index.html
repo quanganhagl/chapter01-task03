@@ -30,17 +30,29 @@
   <!-- animation-->
   <!-- Leaf -->
   <div class="c-banner__leaves">
-    <img
-      class="c-banner__leaftop u-fixed is-notindented--top"
-      src="./assets/img/animation/leaf_top.png"
-      alt="leaf top"
-    />
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="./assets/img/animation/leaf_top_mobile.png"
+      />
+      <img
+        class="c-banner__leaftop u-fixed u-scalehalf is-notindented--top"
+        src="./assets/img/animation/leaf_top.png"
+        alt="leaf top"
+      />
+    </picture>
 
-    <img
-      class="c-banner__leafright u-fixed is-notindented--right"
-      src="./assets/img/animation/leaf_right.png"
-      alt="leaf right"
-    />
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="./assets/img/animation/leaf_right_mobile.png"
+      />
+      <img
+        class="c-banner__leafright u-fixed u-scalehalf is-notindented--right"
+        src="./assets/img/animation/leaf_right.png"
+        alt="leaf right"
+      />
+    </picture>
   </div>
   <!-- Bubble -->
   <div class="c-banner__drops is-shown pc-only">

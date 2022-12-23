@@ -4,9 +4,31 @@
     position: fixed;
     z-index: 10;
     margin-top: 66px;
+    @include sp {
+        width: 100vw;
+        padding: 0 30px;
+        margin-top: 0;
+        height: 100vh;
+        background: #1f4242;
+    }
+
+    .c-header__nav {
+        @include sp {
+            margin-top: 30px;
+        }
+    }
 
     .c-header__navitem {
         margin-bottom: 15px;
+        @include sp {
+            height: 80px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #3a5656;
+            box-shadow: 0 1px 0 #1d3636;
+            align-items: center;
+        }
     }
 
     .c-header__navlink {
@@ -15,13 +37,29 @@
         width: 198px;
         height: 40px;
         align-items: center;
+        @include sp {
+            background: none;
+            justify-content: center;
+        }
     }
 
     .c-header__navtext {
         margin-left: 21px;
         letter-spacing: 3.5px;
+        @include sp {
+            margin-left: 0;
+        }
     }
 
+    .c-header__leaftopmenu {
+        top: 0;
+        left: -30px;
+    }
+
+    .c-header__leafrightmenu {
+        right: 0;
+        top: 40%;
+    }
 }
 /* Main menu
 ------------------------------------------------------------*/

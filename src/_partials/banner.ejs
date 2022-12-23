@@ -1,14 +1,11 @@
 <section id="banner" class="c-banner p-scroll">
-  <div class="c-banner__imgtext l-container--1120px">
+  <div class="c-banner__imgtext l-container">
     <picture>
       <source
         media="(max-width: 767px)"
         srcset="./assets/img/banner/banner_bg_mobile.jpg"
       />
-      <source
-        media="(min-width: 1024px)"
-        srcset="./assets/img/banner/banner_bg.jpg"
-      />
+
       <img
         class="c-banner_img"
         src="./assets/img/banner/banner_bg.jpg"
@@ -17,10 +14,17 @@
     </picture>
     <div class="c-banner__content">
       <h1 class="c-banner__heading">
-        <img
-          src="./assets/img/banner/banner_h1.png"
-          alt="健栄製薬の ハッカ油"
-        />
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./assets/img/banner/banner_h1_mobile.png"
+          />
+          <img
+            class="c-banner__headingimg u-scalehalf"
+            src="./assets/img/banner/banner_h1.png"
+            alt="健栄製薬の ハッカ油"
+          />
+        </picture>
       </h1>
       <hr class="c-banner__linebreak" />
       <p class="c-banner__product--en">MENTHA OIL</p>
@@ -30,7 +34,7 @@
     </div>
   </div>
   <img
-    class="c-banner__iconmenu sp-only"
+    class="c-banner__iconmenu sp-only u-scalehalf"
     src="./assets/img/header/iconmenu_green_mobile.png"
     alt="icon menu"
   />

@@ -1,16 +1,20 @@
 <section id="qa" class="c-qa l-container--860px p-scroll">
-    <div class="c-qa__content">
-        <h2 class="c-qa__heading u-greentext">Q&A</h2>
-        <dl class="c-qa__list">
-            <% qas.forEach(qa => { %>
-            <div class="c-qa__questionanswer">
-                <dt class="c-qa__question">
-                    <img src="./assets/img/qa/qa_icon.png" alt="question">
-                    <p class="c-qa__questioncontent u-greentext"><%= qa.question %></p>
-                </dt>
-                <dd class="c-qa__answer u-black333text"><%= qa.answer %></dd>
-            </div>
-            <% }) %>
-        </dl>
-    </div>
+  <div class="c-qa__content">
+    <h2 class="c-qa__heading u-greentext">Q&A</h2>
+    <dl class="c-qa__list">
+      <% qas.forEach(qa => { %>
+      <div class="c-qa__questionanswer">
+        <dt class="c-qa__question">
+          <img
+            class="u-scalehalf"
+            src="./assets/img/qa/qa_icon.png"
+            alt="question"
+          />
+          <p class="c-qa__questioncontent u-greentext"><%= qa.question %></p>
+        </dt>
+        <dd class="c-qa__answer u-black333text"><%= qa.answer %></dd>
+      </div>
+      <% }) %>
+    </dl>
+  </div>
 </section>

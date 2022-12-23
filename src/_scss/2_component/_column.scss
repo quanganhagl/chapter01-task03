@@ -27,6 +27,7 @@
 
     .c-column_article {
         padding-top: 35px;
+        overflow: hidden;
     }
 
     .c-column__header {
@@ -67,6 +68,16 @@
         margin-top: 20px;
         letter-spacing: 1.4px;
         width: 97%;
+        max-height: 100vh;
+        opacity: 1;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        @include sp {
+            &.is-sphidden {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+            }
+        }
     }
 
     .c-column__arrow {
@@ -75,7 +86,9 @@
 
     .c-column_sparrowblock {
         background-color: #176b6a;
-        display: flex !important;
         justify-content: center;
+        align-items: center;
+        border-radius: 7.5px;
+        height: 20px;
     }
 }
