@@ -7,16 +7,22 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.sp-only {
+.is-sponly {
     display: none !important;
 }
 @include sp {
-    .pc-only {
+    .is-pconly {
         display: none !important;
     }
 
-    .sp-only {
-        display: block !important;
+    .is-sponly {
+        display: unset !important;
+    }
+}
+
+.is-pcandtab {
+    @include sp {
+        display: none;
     }
 }
 
@@ -25,7 +31,6 @@
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "1_layout/header";
 @import "1_layout/footer";
-@import "1_layout/breadcrumb";
 @import "1_layout/layout";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

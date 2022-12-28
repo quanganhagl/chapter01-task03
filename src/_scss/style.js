@@ -1,89 +1,119 @@
-import './style.scss'
+import "./style.scss";
 
-let website = document.querySelector("html")
-let drops = document.querySelector(".c-banner__drops")
-let leafTop = document.querySelector(".c-banner__leaftop")
-let leafRight = document.querySelector(".c-banner__leafright")
+let website = document.querySelector("html");
+let drops = document.querySelector(".c-banner__drops");
+let leafTop = document.querySelector(".c-banner__leaftop");
+let leafRight = document.querySelector(".c-banner__leafright");
+let leafTopMobile = document.querySelector(".c-header__leaftopmenu");
+let leafRightMobile = document.querySelector(".c-header__leafrightmenu");
 
 // scroll ẩn hiện bubble và leaf
-document.addEventListener("scroll", e => {
-    if (website.scrollTop <= 100) {
-        drops.classList.remove("is-hidden")
+document.addEventListener("scroll", (e) => {
+  if (website.scrollTop <= 100) {
+    drops.classList.remove("is-hidden");
 
-        leafTop.classList.remove("is-indented--top")
-        leafRight.classList.remove("is-indented--right")
-    } else {
-        drops.classList.add("is-hidden")
+    leafTop.classList.remove("is-indented--top");
+    leafRight.classList.remove("is-indented--right");
+  } else {
+    drops.classList.add("is-hidden");
 
-        leafTop.classList.add("is-indented--top")
-        leafRight.classList.add("is-indented--right")
-    }
-// cuộn đến phần nào thì sáng nav bar phần đó
-    check_el_pos()
-})
+    leafTop.classList.add("is-indented--top");
+    leafRight.classList.add("is-indented--right");
+  }
+  // cuộn đến phần nào thì sáng nav bar phần đó
+  check_el_pos();
+});
 
-let navLinks = document.querySelectorAll(".c-header__navlink")
+let navLinks = document.querySelectorAll(".c-header__navlink");
 function check_el_pos() {
-    let scroll_pos = window.scrollY;
-    let sections = document.querySelectorAll(".p-scroll")
-    sections.forEach(function (section, index) {
-        if (scroll_pos + 500 >= section.offsetTop) {
-            navLinks.forEach(function (navLink) {
-                navLink.classList.remove('is-active')
-            });
-            navLinks[index].classList.add('is-active')
-        }
-    })
+  let scroll_pos = window.scrollY;
+  let sections = document.querySelectorAll(".p-scroll");
+  sections.forEach(function (section, index) {
+    if (scroll_pos + 500 >= section.offsetTop) {
+      navLinks.forEach(function (navLink) {
+        navLink.classList.remove("is-active");
+      });
+      navLinks[index].classList.add("is-active");
+    }
+  });
 }
 
-// click vào more trong point để ẩn hiện overlay
+// click vào more trong point để ẩn hiện overlay trong 1 point nhung khong tat overlay cua point khac
 
 $(".c-info__more").click(function () {
-    $(this).parent().parent().parent().find(".c-info__overlay").removeClass("u-displayedflex").addClass("u-nodisplayforced");
-    $(this).next().removeClass("u-nodisplayforced").addClass("u-displayedflex");
+  $(this)
+    .parent()
+    .parent()
+    .find(".c-info__overlay")
+    .removeClass("c-info__overlay--flex");
+  $(this).next().addClass("c-info__overlay--flex");
+  console.log("dfgkldkj");
 });
 
-// MOBILE MENU 
-let menuBtnSp = document.querySelector(".c-banner__iconmenu.sp-only")
-let menuBar = document.querySelector(".c-header.pc-only")
-let bodyElement = document.querySelector("body")
+// MOBILE MENU
+let menuBtnSp = document.querySelector(".c-banner__iconmenu");
+let menuBar = document.querySelector(".c-header");
+let bodyElement = document.querySelector("body");
 
-function mobileMenuHandler () {
-    if (menuBar.classList.contains("is-displayedmenusp")) {
-        menuBtnSp.src = "./assets/img/header/iconmenu_white_mobile.png" 
-        bodyElement.classList.add("u-disablescroll")
-        leafRight.classList.add("u-nodisplayforced")
-        leafTop.classList.add("u-nodisplayforced")
-    } else {
-        menuBtnSp.src = "./assets/img/header/iconmenu_green_mobile.png"
-        bodyElement.classList.remove("u-disablescroll")
-        leafRight.classList.remove("u-nodisplayforced")
-        leafTop.classList.remove("u-nodisplayforced")
-    }
+function mobileMenuHandler() {
+  if (menuBar.classList.contains("is-tabandspnotvisible")) {
+    menuBtnSp.src = "./assets/img/header/iconmenu_green_mobile.png";
+    menuBtnSp.classList.add("u-backgroundwhite");
+    menuBtnSp.classList.remove("u-backgroundgreen");
+    bodyElement.classList.remove("u-disablescroll");
+    leafRight.classList.remove("is-notvisible");
+    leafTop.classList.remove("is-notvisible");
+
+    leafRightMobile.classList.remove("is-displayedmenumobile");
+    leafTopMobile.classList.remove("is-displayedmenumobile");
+    // if (menuBar.classList.contains("is-spnotvisible")) {
+
+    //     leafRightMobile.classList.add("is-notdisplayed")
+    //     leafTopMobile.classList.add("is-notdisplayed")
+    // } else {
+    //     leafRightMobile.classList.remove("is-notdisplayed")
+    //     leafTopMobile.classList.remove("is-notdisplayed")
+    // }
+  } else {
+    menuBtnSp.src = "./assets/img/header/iconmenu_white_mobile.png";
+    menuBtnSp.classList.remove("u-backgroundwhite");
+    menuBtnSp.classList.add("u-backgroundgreen");
+    bodyElement.classList.add("u-disablescroll");
+    leafRight.classList.add("is-notvisible");
+    leafTop.classList.add("is-notvisible");
+    
+    leafRightMobile.classList.add("is-displayedmenumobile");
+    leafTopMobile.classList.add("is-displayedmenumobile");
+    // leafTopMobile.classList.remove("is-notdisplayed");
+    // leafRightMobile.classList.remove("is-notdisplayed");
+  }
 }
-
 // click vào menu button để ẩn hiện menu bar
-menuBtnSp.addEventListener("click", function() {
-    menuBar.classList.toggle("is-displayedmenusp")
-    mobileMenuHandler()
-})
+menuBtnSp.addEventListener("click", function () {
+  menuBar.classList.toggle("is-tabandspnotvisible");
+  mobileMenuHandler();
+});
 // click vào nav button menu để ẩn menu bar
-navLinks.forEach(function (navLink) {
-    navLink.addEventListener("click", function() {
-        menuBar.classList.remove("is-displayedmenusp")
-        mobileMenuHandler()
-    })
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      console.log("dfjgidg")
+      menuBar.classList.toggle("is-tabandspnotvisible");
+      mobileMenuHandler();
+    });
+  });
+
+//click arrow down to display / hide column description
+$(".c-column__sparrowblock").click(function () {
+  $(this)
+    .parent()
+    .children(".c-column__article")
+    .children(".c-column__description")
+    .toggleClass("is-sphidden");
 });
 
-//arrow down column
-// let openColumnDescriptionBtns = document.querySelectorAll(".c-column__sparrowblock")
-// openColumnDescriptionBtns.forEach(btn => {
-//     btn.addEventListener("click", function() {
-//         let columnDescriptionBlock = this
-//     openColumnDescriptionBtn.classList.toggle("pc-only")
-//     })
-// })
-$(".c-column_sparrowblock").click(function() {
-    var a = $(this).parent().children(".c-column_article").children(".c-column__description").toggleClass("is-sphidden");
-    console.log(a); 
-})
+//arrow rotate
+$(".c-column__sparrow")
+  .parent()
+  .click(function () {
+    $(this).children().toggleClass("is-rotated");
+  });

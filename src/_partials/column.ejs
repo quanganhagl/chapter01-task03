@@ -16,8 +16,8 @@
     </h2>
     <div class="c-column__list l-container--860px">
       <% columns.forEach(column => { %>
-      <div class="c-column_articleblock">
-        <div class="c-column_article">
+      <div class="c-column__articleblock">
+        <div class="c-column__article">
           <div class="c-column__header">
             <picture>
               <source
@@ -26,34 +26,42 @@
               />
 
               <img
-                class="c-column__headerimg u-scalehalf"
+                class="c-column__headerimg"
                 src="./assets/img/column/column_<%= column.id %>.jpg"
                 alt="column.title"
               />
             </picture>
             <div class="c-column__headerheading">
-              <p class="u-black333text u-spacing--1p4px">
+              <p
+                class="c-column__headerheadingp u-black333text u-spacing--1p4px"
+              >
                 <%= column.titleNote %>
               </p>
-              <h3 class="c-column__title u-black333text">
+              <h3
+                class="c-column__headerheadingh3 c-column__title u-black333text"
+              >
                 <%= column.title %>
               </h3>
             </div>
           </div>
-          <p class="c-column__description u-black333text is-sphidden">
-            <%= column.description %>
-          </p>
+          <div class="c-column__description is-sphidden">
+            <p class="u-black333text is-sphidden"><%= column.description %></p>
+            <div class="is-sponly c-column__seemoreblock">
+              <a href="#" class="c-column__seemore">詳しく見る</a>
+            </div>
+          </div>
         </div>
-        <div class="pc-only">
+        <div class="is-pconly">
           <img
-            class="c-column__arrow u-scalehalf"
+            class="c-column__arrow"
             src="./assets/img/column/column_arrow.png"
             alt="go-to arrow"
           />
         </div>
-        <div class="c-column_sparrowblock u-displayedflex sp-only">
+
+        <div class="c-column__sparrowblock c-info__overlay--flex is-sponly">
           <img
-            class="u-scalehalf sp-only"
+            class="c-column__sparrow is-sponly u-scalehalf"
             src="./assets/img/column/column_arrow_mobile.png"
             alt="go-to arrow"
           />

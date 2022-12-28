@@ -5,22 +5,34 @@
     <% if (typeof dailyItems != 'undefined') { %> <%
     dailyItems.forEach(dailyItem => { %>
     <div class="c-daily__use c-daily__use<%= dailyItem.id %>">
-      <img
-        class="c-daily__useimg"
-        src="<%= dailyItem.url %>"
-        alt="<%= dailyItem.title %>"
-      />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="<%= dailyItem.urlmobile %>"
+        />
+        <img
+          class="c-daily__useimg u-scalehalf"
+          src="<%= dailyItem.url %>"
+          alt="<%= dailyItem.title %>"
+        />
+      </picture>
       <label
         class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text u-aligned"
       >
         <%= dailyItem.title %></label
       >
       <% if (dailyItem.recommend) { %>
-      <img
-        class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-mt8"
-        src="<%= dailyItem.recommend %>"
-        alt="<%= dailyItem.title %>"
-      />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="<%= dailyItem.recommendmobile %>"
+        />
+        <img
+          class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-scalehalf"
+          src="<%= dailyItem.recommend %>"
+          alt="<%= dailyItem.title %>"
+        />
+      </picture>
       <% } %>
     </div>
     <% }) %> <% } %>

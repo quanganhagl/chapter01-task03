@@ -7,7 +7,7 @@
         <div class="c-info__pointheading">
           <div class="c-info__number">
             <img
-              class="u-scalehalf"
+              class="c-info__numberimg"
               src="<%= pointNumber.url %>"
               alt="<%= pointNumber.title %>"
             />
@@ -18,41 +18,49 @@
             <h2 class="c-info__bigheading u-greentext">
               <%= pointNumber.title %>
             </h2>
-            <p class="c-info__smallheading pc-only">
+            <p class="c-info__smallheading is-pconly">
               <%= pointNumber.description %>
             </p>
-            <p class="c-info__smallheading pc-only">
+            <p class="c-info__smallheading is-pconly">
               <%= pointNumber.description2 %>
             </p>
           </div>
-          <p class="c-info__smallheading sp-only">
-            <%= pointNumber.description %><%= pointNumber.description2 %>
+          <p class="c-info__smallheading is-sponly">
+            <%= pointNumber.description %>
+            <span
+              class="c-info__smallheading is-sponly c-info__smallheading--aligned"
+            >
+              <%= pointNumber.description2 %>
+            </span>
           </p>
         </div>
 
-        <div class="c-info__images">
+        <div class="c-info__images c-info__image<%= pointNumber.id %>">
           <% pointNumber.pointImages.forEach(pointImage => { %>
           <div class="c-info__imagecontainer">
             <img
-              class="c-info__image u-scalehalf"
+              class="c-info__image"
               src="<%= pointImage.url %>"
               alt="<%= pointImage.title %>"
             />
             <img
-              class="c-info__more c-info__more<%= pointImage.point %> u-scalehalf"
+              class="c-info__more c-info__more<%= pointImage.point %>"
               src="./assets/img/point/point_more.png"
               alt="more"
             />
-            <div class="c-info__overlay u-nodisplay">
-              <h3 class="c-info__overlayheading u-greentext">
+            <div class="c-info__overlay">
+              <h3
+                class="c-info__overlayheading c-info__overlayheading<%= pointNumber.id %> u-greentext"
+              >
                 <%= pointImage.title %>
               </h3>
               <hr class="c-info__overlaylinebreak" />
               <p class="c-info__overlaydescription">
                 <%= pointImage.description %>
               </p>
-              <label class="c-info__overlaylabel u-whitetext"
-                >ハッカ油コラムへ
+              <label
+                class="c-info__overlaylabel c-info__overlaylabel<%= pointNumber.id %> u-whitetext"
+                ><a href="#column">ハッカ油コラムへ</a>
               </label>
             </div>
           </div>
@@ -65,12 +73,14 @@
     <!-- ********************* -->
     <div class="c-info__brand l-container">
       <h2 class="c-info__brandheading u-greentext">
-        お買い求めは全国のドラッグストア、またはこちらから
+        お買い求めは全国のドラッグストア<br
+          class="is-sponly"
+        />、またはこちらから
       </h2>
       <div class="c-info__brandlogos">
         <% info.brands.forEach(brand => { %>
         <img
-          class="c-info__brandlogo u-scalehalf"
+          class="c-info__brandlogo"
           src="<%= brand.url %>"
           alt="お買い求めは全国のドラッグストア、またはこちらから"
         />

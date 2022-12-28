@@ -3,6 +3,9 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     padding: 0 30px 30px;
+    @include tab {
+        padding: 0 15px 15px;
+    }
 
     .c-footer__container {
         padding-top: 50px;
@@ -10,6 +13,12 @@ footer
         background-color: #fff;
         padding-left: 30px;
         padding-right: 30px;
+        @include tab {
+            padding-top: 0;
+            @include sp {
+                padding-top: 24px;
+            }
+        }
     }
 
     .c-footer__headingimg {
@@ -19,6 +28,9 @@ footer
 
     .c-footer__image {
         border-radius: 50px;
+        @include tab {
+            border-radius: 50px;
+        }
 
         &:hover {
             @include hover-effect;
@@ -30,14 +42,37 @@ footer
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 65px;
-        @include sp {
+        @include tab {
+            margin-top: 25px;
             display: block;
+            @include sp {
+                margin-top: 61px;
+                padding-bottom: 45px;
+            }
         }
     }
 
     .c-footer__contactinfo {
         letter-spacing: 1.5px;
         line-height: 1.7;
+        transform: translateY(-1px);
+        @include tab {
+            margin-bottom: 25px;
+            @include sp {
+                font-size: 1.3rem;
+                margin-top: -6px;
+                margin-left: -15px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .c-footer__contactinfocontent {
+        @include sp {
+            font-size: 1.3rem;
+            color: #000;
+        }
     }
 
     .c-footer__phonenumber {
@@ -52,7 +87,7 @@ footer
         &:hover {
             @include hover-effect;
         }
-        @include sp {
+        @include tab {
             text-align: center;
         }
     }
@@ -61,8 +96,11 @@ footer
         position: absolute;
         top: 6px;
         right: 0;
-        @include sp {
+        @include tab {
             position: static;
+            @include sp {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -72,8 +110,12 @@ footer
         bottom: 2px;
         right: 0;
         letter-spacing: 1.4px;
-        @include sp {
+        @include tab {
             position: static;
+            @include sp {
+                letter-spacing: -0.1px;
+                margin-left: -2px;
+            }
         }
     }
 }

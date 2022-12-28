@@ -29,44 +29,55 @@
   },
   "dailyItems": [
     {
+      "urlmobile": "./assets/img/daily/daily_bottle_mobile.png",
       "url": "./assets/img/daily/daily_bottle.png",
       "title": "ハッカ水",
       "id": "1",
-      "recommend": "./assets/img/daily/daily_use.png"
+      "recommend": "./assets/img/daily/daily_use.png",
+      "recommendmobile": "./assets/img/daily/daily_use_mobile.png"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_spray_mobile.png",
       "url": "./assets/img/daily/daily_spray.png",
       "title": "ハッカの虫除けスプレー",
       "id": "2"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_iron_mobile.png",
       "url": "./assets/img/daily/daily_iron.png",
       "title": "ハッカのリネンウォーター",
       "id": "3"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_smallspray_mobile.png",
       "url": "./assets/img/daily/daily_smallspray.png",
       "title": "ハッカのエアフレッシュナー",
       "id": "4",
-      "recommend": "./assets/img/daily/daily_use.png"
+      "recommend": "./assets/img/daily/daily_use.png",
+      "recommendmobile": "./assets/img/daily/daily_use_mobile.png"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_gelcontainer_mobile.png",
       "url": "./assets/img/daily/daily_gelcontainer.png",
       "title": "ハッカの清涼スプレー",
       "id": "5"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_mask_mobile.png",
       "url": "./assets/img/daily/daily_mask.png",
       "title": "ハッカマスク",
       "id": "6",
-      "recommend": "./assets/img/daily/daily_recommend.png"
+      "recommend": "./assets/img/daily/daily_recommend.png",
+      "recommendmobile": "./assets/img/daily/daily_recommend_mobile.png"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_pillow_mobile.png",
       "url": "./assets/img/daily/daily_pillow.png",
       "title": "ハッカで安息",
       "id": "7"
     },
     {
+      "urlmobile": "./assets/img/daily/daily_bathtub_mobile.png",
       "url": "./assets/img/daily/daily_bathtub.png",
       "title": "ハッカの入浴剤",
       "id": "8"
@@ -76,6 +87,7 @@
     "points": {
       "pointNumbers": [
         {
+          "id": 1,
           "url": "./assets/img/point/point_1/point_1.png",
           "title": "気持ちリフレッシュ",
           "description": "鼻や口から入った香りの信号は、視床下部などに直接作用し",
@@ -105,9 +117,10 @@
           ]
         },
         {
+          "id": 2,
           "url": "./assets/img/point/point_2/point_2.png",
           "title": "気持ちリフレッシュ",
-          "description": "メントールの刺激ですっきりクールダウン",
+          "description": "メントールの刺激ですっきりクールダウン。",
           "description2": "ミントの香りで気分も爽快！",
           "pointImages": [
             {
@@ -134,6 +147,7 @@
           ]
         },
         {
+          "id": 3,
           "url": "./assets/img/point/point_3/point_3.png",
           "title": "ハウスキーピング",
           "description": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。",
