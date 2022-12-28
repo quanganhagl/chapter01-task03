@@ -66,14 +66,7 @@ function mobileMenuHandler() {
 
     leafRightMobile.classList.remove("is-displayedmenumobile");
     leafTopMobile.classList.remove("is-displayedmenumobile");
-    // if (menuBar.classList.contains("is-spnotvisible")) {
 
-    //     leafRightMobile.classList.add("is-notdisplayed")
-    //     leafTopMobile.classList.add("is-notdisplayed")
-    // } else {
-    //     leafRightMobile.classList.remove("is-notdisplayed")
-    //     leafTopMobile.classList.remove("is-notdisplayed")
-    // }
   } else {
     menuBtnSp.src = "./assets/img/header/iconmenu_white_mobile.png";
     menuBtnSp.classList.remove("u-backgroundwhite");
@@ -84,8 +77,6 @@ function mobileMenuHandler() {
     
     leafRightMobile.classList.add("is-displayedmenumobile");
     leafTopMobile.classList.add("is-displayedmenumobile");
-    // leafTopMobile.classList.remove("is-notdisplayed");
-    // leafRightMobile.classList.remove("is-notdisplayed");
   }
 }
 // click vào menu button để ẩn hiện menu bar

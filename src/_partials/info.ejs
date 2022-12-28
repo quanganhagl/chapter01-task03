@@ -79,11 +79,12 @@
       </h2>
       <div class="c-info__brandlogos">
         <% info.brands.forEach(brand => { %>
-        <img
-          class="c-info__brandlogo"
-          src="<%= brand.url %>"
-          alt="お買い求めは全国のドラッグストア、またはこちらから"
-        />
+        <a href="#" target="_blank"
+          ><img
+            class="c-info__brandlogo"
+            src="<%= brand.url %>"
+            alt="お買い求めは全国のドラッグストア、またはこちらから"
+        /></a>
 
         <%}) %>
       </div>

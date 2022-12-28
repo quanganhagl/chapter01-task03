@@ -18,32 +18,34 @@
       <% columns.forEach(column => { %>
       <div class="c-column__articleblock">
         <div class="c-column__article">
-          <div class="c-column__header">
-            <picture>
-              <source
-                media="(max-width: 767px)"
-                srcset="./assets/img/column/column_<%= column.id %>_mobile.png"
-              />
+          <a href="#">
+            <div class="c-column__header">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./assets/img/column/column_<%= column.id %>_mobile.png"
+                />
 
-              <img
-                class="c-column__headerimg"
-                src="./assets/img/column/column_<%= column.id %>.jpg"
-                alt="column.title"
-              />
-            </picture>
-            <div class="c-column__headerheading">
-              <p
-                class="c-column__headerheadingp u-black333text u-spacing--1p4px"
-              >
-                <%= column.titleNote %>
-              </p>
-              <h3
-                class="c-column__headerheadingh3 c-column__title u-black333text"
-              >
-                <%= column.title %>
-              </h3>
+                <img
+                  class="c-column__headerimg"
+                  src="./assets/img/column/column_<%= column.id %>.jpg"
+                  alt="column.title"
+                />
+              </picture>
+              <div class="c-column__headerheading">
+                <p
+                  class="c-column__headerheadingp u-black333text u-spacing--1p4px"
+                >
+                  <%= column.titleNote %>
+                </p>
+                <h3
+                  class="c-column__headerheadingh3 c-column__title u-black333text"
+                >
+                  <%= column.title %>
+                </h3>
+              </div>
             </div>
-          </div>
+          </a>
           <div class="c-column__description is-sphidden">
             <p class="u-black333text is-sphidden"><%= column.description %></p>
             <div class="is-sponly c-column__seemoreblock">
