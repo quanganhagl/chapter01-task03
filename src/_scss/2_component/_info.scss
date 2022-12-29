@@ -41,7 +41,7 @@
                 .c-info__imagecontainer {
                     &:nth-child(1) {
                         .c-info__image {
-                            content: url(../../assets/img/point/point_3/point_31_mobile.jpg);
+                            content: url(./assets/img/point/point_3/point_31_mobile.jpg);
                         }
                     }
                 }
@@ -296,7 +296,7 @@
     }
 
     .c-info__overlaylabel {
-        background-image: url(../../assets/img/point/point_button.png);
+        background-image: url(./assets/img/point/point_button.png);
         font-size: 1.6rem;
         padding: 9px 0 8px 28px;
         display: inline-block;

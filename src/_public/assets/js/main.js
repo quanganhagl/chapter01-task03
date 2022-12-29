@@ -55,7 +55,7 @@ let bodyElement = document.querySelector("body");
 
 function mobileMenuHandler() {
   if (menuBar.classList.contains("is-tabandspnotvisible")) {
-    menuBtnSp.src = "../../assets/img/header/iconmenu_green_mobile.png";
+    menuBtnSp.src = "./assets/img/header/iconmenu_green_mobile.png";
     menuBtnSp.classList.add("u-backgroundwhite");
     menuBtnSp.classList.remove("u-backgroundgreen");
     bodyElement.classList.remove("u-disablescroll");
@@ -65,7 +65,7 @@ function mobileMenuHandler() {
     leafRightMobile.classList.remove("is-displayedmenumobile");
     leafTopMobile.classList.remove("is-displayedmenumobile");
   } else {
-    menuBtnSp.src = "../../assets/img/header/iconmenu_white_mobile.png";
+    menuBtnSp.src = "./assets/img/header/iconmenu_white_mobile.png";
     menuBtnSp.classList.remove("u-backgroundwhite");
     menuBtnSp.classList.add("u-backgroundgreen");
     bodyElement.classList.add("u-disablescroll");
