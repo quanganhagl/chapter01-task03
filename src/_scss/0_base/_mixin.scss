@@ -2,13 +2,13 @@
 // clearfix
 //============================================
 @mixin clear {
-  *zoom: 1;
+    *zoom: 1;
 
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
 }
 
 //============================================
@@ -16,21 +16,21 @@
 //============================================
 
 @mixin tab {
-  @media only screen and (max-width: 1023px) {
-    @content;
-  }
+    @media only screen and (max-width: 1023px) {
+        @content;
+    }
 }
 
 @mixin sp {
-  @media only screen and (max-width: 767px) {
-    @content;
-  }
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
 }
 
 //============================================
 // utility
 //============================================
 @mixin hover-effect {
-  opacity: 0.7;
-  cursor: pointer;
+    opacity: 0.7;
+    cursor: pointer;
 }
