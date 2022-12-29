@@ -37,6 +37,16 @@
                 }
             }
 
+            &:nth-child(3) {
+                .c-info__imagecontainer {
+                    &:nth-child(1) {
+                        .c-info__image {
+                            content: url(../../assets/img/point/point_3/point_31_mobile.jpg);
+                        }
+                    }
+                }
+            }
+
             &:nth-child(2n + 1) {
                 .c-info__smallheading--aligned {
                     margin-left: -5px;
@@ -96,7 +106,7 @@
     .c-info__image {
         border-radius: 30px;
         @include sp {
-            border-radius: 14px;
+            border-radius: 15px;
         }
     }
 
@@ -175,11 +185,14 @@
     }
 
     .c-info__headingcontent {
-        margin-left: 27px;
+        margin-left: 28px;
+        transform: translateY(1px);
         @include tab {
             display: flex;
             margin-left: 25px;
             flex-direction: column;
+            transform: translateY(0);
+
             @include sp {
                 margin-left: 4.7%;
             }
@@ -213,7 +226,7 @@
                 left: 5%;
                 right: 2.2%;
                 bottom: 4.6%;
-                border-radius: 12px;
+                border-radius: 13px;
                 display: block;
             }
         }
@@ -250,10 +263,11 @@
         height: 1px;
         border: none;
         background-color: #176b6a;
-        margin-top: 9px;
+        margin-top: 12px;
         margin-left: auto;
         margin-right: auto;
         @include sp {
+            margin-top: 9px;
             transform: translate(-4px, 11px);
         }
     }
@@ -282,7 +296,7 @@
     }
 
     .c-info__overlaylabel {
-        background-image: url(./assets/img/point/point_button.png);
+        background-image: url(../../assets/img/point/point_button.png);
         font-size: 1.6rem;
         padding: 9px 0 8px 28px;
         display: inline-block;

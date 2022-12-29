@@ -16,7 +16,9 @@ footer
         @include tab {
             padding-top: 0;
             @include sp {
-                padding-top: 24px;
+                padding-top: 22px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
         }
     }
@@ -29,7 +31,10 @@ footer
     .c-footer__image {
         border-radius: 50px;
         @include tab {
-            border-radius: 50px;
+            border-radius: 20px;
+            @include sp {
+                border-radius: 50px;
+            }
         }
 
         &:hover {
@@ -61,7 +66,6 @@ footer
             @include sp {
                 font-size: 1.3rem;
                 margin-top: -6px;
-                margin-left: -15px;
                 letter-spacing: 0;
                 margin-bottom: 24px;
             }
@@ -83,9 +87,10 @@ footer
 
     .c-footer__logo {
         position: relative;
-    }
-    @include tab {
-        text-align: center;
+
+        @include tab {
+            text-align: center;
+        }
     }
 }
 

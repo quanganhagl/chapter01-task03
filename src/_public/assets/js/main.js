@@ -1,4 +1,3 @@
-
 let website = document.querySelector("html");
 let drops = document.querySelector(".c-banner__drops");
 let leafTop = document.querySelector(".c-banner__leaftop");
@@ -56,7 +55,7 @@ let bodyElement = document.querySelector("body");
 
 function mobileMenuHandler() {
   if (menuBar.classList.contains("is-tabandspnotvisible")) {
-    menuBtnSp.src = "./assets/img/header/iconmenu_green_mobile.png";
+    menuBtnSp.src = "../../assets/img/header/iconmenu_green_mobile.png";
     menuBtnSp.classList.add("u-backgroundwhite");
     menuBtnSp.classList.remove("u-backgroundgreen");
     bodyElement.classList.remove("u-disablescroll");
@@ -65,15 +64,14 @@ function mobileMenuHandler() {
 
     leafRightMobile.classList.remove("is-displayedmenumobile");
     leafTopMobile.classList.remove("is-displayedmenumobile");
-
   } else {
-    menuBtnSp.src = "./assets/img/header/iconmenu_white_mobile.png";
+    menuBtnSp.src = "../../assets/img/header/iconmenu_white_mobile.png";
     menuBtnSp.classList.remove("u-backgroundwhite");
     menuBtnSp.classList.add("u-backgroundgreen");
     bodyElement.classList.add("u-disablescroll");
     leafRight.classList.add("is-notvisible");
     leafTop.classList.add("is-notvisible");
-    
+
     leafRightMobile.classList.add("is-displayedmenumobile");
     leafTopMobile.classList.add("is-displayedmenumobile");
   }
@@ -84,13 +82,13 @@ menuBtnSp.addEventListener("click", function () {
   mobileMenuHandler();
 });
 // click vào nav button menu để ẩn menu bar
-  navLinks.forEach(function (navLink) {
-    navLink.addEventListener("click", function () {
-      console.log("dfjgidg")
-      menuBar.classList.toggle("is-tabandspnotvisible");
-      mobileMenuHandler();
-    });
+navLinks.forEach(function (navLink) {
+  navLink.addEventListener("click", function () {
+    console.log("dfjgidg");
+    menuBar.classList.toggle("is-tabandspnotvisible");
+    mobileMenuHandler();
   });
+});
 
 //click arrow down to display / hide column description
 $(".c-column__sparrowblock").click(function () {
